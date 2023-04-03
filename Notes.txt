@@ -481,6 +481,25 @@
                        @Value("#{new java.lang.String ('Reddy')}")
                        	private String stringTypeObjectValue;
 
+ ==] Removing Complete XML for Spring Configuration:
+    --> @Component:
+        -> @Component is an annotation that allows Spring to automatically detect our custom beans.
+        -> In other words it will specify the bean in spring programming.
+
+    --> @Configuration:
+        -> Annotating a class with the @Configuration indicates that the class can be used by
+            the Spring IOC container as a source of bean definitions.
+        -> It tells IOC to use this java class for configuration.
+
+    --> @Bean:
+        -> The @Bean annotation tells spring that a method annotated with
+           @Bean will return an object that should be registered as a bean in the Spring Application Context.
+
+    --> @ComponentScan:
+        -> With spring, we use the @ComponentScan annotation along with the
+           @Configuration annotation to specify the packages that we want to be scanned.
+        -> @ComponentScan without arguments tells Spring to scan the current package and all of its sub-packages.
+
 
 
 
